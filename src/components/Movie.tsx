@@ -11,7 +11,7 @@ import { useParams } from "react-router-dom";
 
 import NoImage from '../images/no_image.jpg'
 
-const Movie = () => {
+const Movie: React.FC = () => {
   const { movieId } = useParams();
   const { movie, loading, error } = useMovieFetch(movieId);
 
