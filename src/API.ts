@@ -29,7 +29,13 @@ export type Movie = {
   budget: number;
   runtime: number;
   revenue: number;
-  overview: string
+  overview: string;
+  genres: Genres[];
+}
+
+export type Genres = {
+  id: number;
+  name: string
 }
 
 export type Movies = {

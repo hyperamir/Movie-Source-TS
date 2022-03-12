@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import API, { Movie, Cast, Crew } from '../API';
+import API, { Movie, Cast, Crew, Genres } from '../API';
 import { isPersistedState } from "../helpers";
 
-export type MovieState = Movie & { actors: Cast[], directors: Crew[] }
+export type MovieState = Movie & { actors: Cast[], directors: Crew[], genres: Genres[] }
 
 export const useMovieFetch = (movieId: any) => {
   const [movie, setMovie] = useState<MovieState>({} as MovieState);
