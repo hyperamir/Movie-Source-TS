@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 type Props = {
   clickable: boolean;
-  movieId: number;
+  movieId?: number;
   image: string
 }
 

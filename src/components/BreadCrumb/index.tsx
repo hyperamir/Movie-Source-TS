@@ -2,7 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Wrapper, Content } from "./BreadCrumb.styles";
 
-const BreadCrumb = (props) => {
+type Props = {
+  movieTitle: string
+}
+
+const BreadCrumb: React.FC<Props> = (props) => {
   return (
     <Wrapper>
       <Content>

@@ -3,9 +3,13 @@ import { Content, Wrapper, Text } from "./MovieInfo.styles";
 import Thumb from "../Thumb";
 import { IMAGE_BASE_URL, POSTER_SIZE } from "../../config";
 import NoImage from '../../images/no_image.jpg';
+import { MovieState } from "../../hooks/useMovieFetch";
 
+type Props = {
+  movie: MovieState
+}
 
-const MovieInfo = (props) => {
+const MovieInfo: React.FC<Props> = (props) => {
   return (
     <Wrapper backdrop={props.movie.backdrop_path} >
       <Content>
