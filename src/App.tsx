@@ -8,7 +8,7 @@ import NotFound from './components/NotFound';
 //styles
 import { GlobalStyle } from './GlobalStyle'
 
-function App() {
+const App: React.FC = () => {
   return (
     <Router>
       <Header />
