@@ -28,7 +28,8 @@ export type Movie = {
   vote_count: number;
   budget: number;
   runtime: number;
-  revenue: number
+  revenue: number;
+  overview: string
 }
 
 export type Movies = {

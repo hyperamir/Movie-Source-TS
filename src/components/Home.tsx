@@ -14,7 +14,7 @@ import { useHomeFetch } from '../hooks/useHomeFetch'
 import noImage from '../images/no_image.jpg'
 import Grid from "./Grid";
 
-const Home = () => {
+const Home: React.FC = () => {
   const { state, loading, error, searchTerm, setIsLoadingMore, setSearchTerm } = useHomeFetch()
 
   const listOfMovies = state.results.map(movie => (
